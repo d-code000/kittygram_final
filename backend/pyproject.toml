@@ -17,3 +17,12 @@ dependencies = [
     "pyyaml==6.0",
     "webcolors==1.11.1",
 ]
+
+[dependency-groups]
+dev = [
+    "flake8>=7.3.0",
+    "flake8-broken-line>=1.0.0",
+    "flake8-isort>=6.1.2",
+    "flake8-return>=1.2.0",
+    "pep8-naming>=0.15.1",
+]
