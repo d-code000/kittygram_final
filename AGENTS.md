@@ -13,7 +13,7 @@ cd backend
 uv sync --dev
 
 # Linting
-uv run flake8 .
+uv run ruff check .
 
 # Run all tests
 uv run pytest ../tests/
@@ -141,8 +141,8 @@ def get_age(self, obj: Cat) -> int:
     return dt.datetime.now().year - obj.birth_year
 ```
 
-### Flake8 Configuration
-Exclusions configured in `backend/.flake8`:
+### Ruff Configuration
+Exclusions configured in `backend/pyproject.toml`:
 - `.venv`, `.git`, `__pycache__`
 - `build`, `dist`, `*.egg-info`
 - `.tox`, `.pytest_cache`, `.mypy_cache`
